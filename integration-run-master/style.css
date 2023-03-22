@@ -1,0 +1,85 @@
+
+body {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+button {
+    background: none;
+    border-radius: 150px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+img::after {
+    content: "";
+    width: 100%;
+    color: gray;
+}
+.started {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.banner img {
+    margin: 0 auto;
+    max-width: 550px;
+}
+.middle {
+    display: grid;
+    grid-template-columns: 37% 63%;
+}
+.text-grid {
+    align-self: center;
+    margin: 50px 50px;
+}
+.middle img {
+    /* margin: 0 auto; */
+    max-width: 400px;
+}
+.end {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.end img {
+    width : 100vw;
+    height : 200vh;
+    max-width : 400px;
+    max-height : 300px;
+    
+}
+
+.formul h2 {
+    text-align: center;
+}
+
+.n-mail {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "name" "email"
+    "mess" "mess"
+    "mess" "mess"
+    "submit" ;
+}
+
+.n-mail {
+    width: 100%;
+}
+
+#firstname {
+    grid-area: name ;
+}
+
+#e-mail {
+    grid-area: email;
+}
+
+#message {
+    grid-area: mess;
+}
+
+#btn-submit {
+    grid-area: submit;
+}
