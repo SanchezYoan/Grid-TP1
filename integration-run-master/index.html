@@ -5,49 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Run</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="body-run">
-        <div class="started">
-            <div class="text-grid">
+    <header>
+
+        <div class="container">
+            <div>   
                 <h1>Run</h1>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas saepe quibusdam labore pariatur nisi tempore fugit eveniet excepturi rerum itaque magnam ad nemo enim, ipsam molestiae necessitatibus delectus in totam.
                 </p>
                 <button>get started</button>
             </div>
-            <div class="banner">
-                <img src="./img/banner.jpg" alt="">
-            </div>
         </div>
-        <div class="middle">
-
-                <img src="./img/img-left.jpg" alt="">
-            <div class="text-grid">
-                <h2>Magna etiam feugiat</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nostrum ad cupiditate sed dolores a sapiente, enim voluptatum quod voluptate beatae perspiciatis omnis hic? Natus molestiae perferendis accusantium possimus iusto!</p>
-                <button>learn more</button>
-            </div>
-        </div>
-        <div class="end">
-            <div class="text-grid">
-                <h2>Tempus adipiscing</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure molestiae facere autem aliquid recusandae odio consectetur ut cupiditate assumenda ipsa facilis ullam quam blanditiis deleniti nesciunt odit eos, veniam voluptatibus.</p>
-                <button>learn more</button>
-            </div>
-            <img src="./img/img-right.jpg" alt="">
-        </div>
-        <div class="formul">
-            <h2>Get in Touch</h2>
-            <form action="submit">
-                <div class="n-mail">
-                    <input type="text" id="firstname" placeholder="Prénom" />
-                    <input type="text" id="e-mail" placeholder="Nom" />
-                    <textarea id="message" cols="30" rows="10" placeholder="Ici votre message"></textarea>
-                    <button type="submit" value="Valider" id="btn-submit" />
+        <div class="img-banner"></div>       
+    </header>
+        <section class="section-1">
+            <div class="img"></div>
+            <div class="container">
+                <div>
+                    <h2>Magna etiam feugiat</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nostrum ad cupiditate sed dolores a sapiente, enim voluptatum quod voluptate beatae perspiciatis omnis hic? Natus molestiae perferendis accusantium possimus iusto!</p>
+                    <button>learn more</button>
                 </div>
-
-        </form>
-    </div>
+            </div>
+        </section>
+        <section class="section-2">
+            <div class="container">
+                <div>
+                    <h2>Tempus adipiscing</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure molestiae facere autem aliquid recusandae odio consectetur ut cupiditate assumenda ipsa facilis ullam quam blanditiis deleniti nesciunt odit eos, veniam voluptatibus.</p>
+                    <button>learn more</button>
+                </div>
+            </div>
+            <div class="img"></div>
+    </section>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form method="post" action="#">
+                <div class="form-grid">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+                    </div>
+                    <div class="textarea">
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                </div>
+                <input type="submit" class="button" value="Send Message" />
+                </form>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </li>
+            </ul>
+        </footer>
 </body>
 </html>
